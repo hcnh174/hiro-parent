@@ -10,11 +10,11 @@
     	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     	<maven.compiler.debug>true</maven.compiler.debug>    	
         <roo.version>1.2.0.RELEASE</roo.version>
+        <aspectj.version>1.6.12.M2</aspectj.version> <!-- 1.6.11 -->
+        <slf4j.version>1.6.2</slf4j.version><!--1.6.1  -->
         <spring.version>3.1.0.RELEASE</spring.version>
         <spring-security.version>3.1.0.RELEASE</spring-security.version> <!-- 3.0.7.RELEASE -->
-        <spring.batch.version>2.1.7.RELEASE</spring.batch.version>	
-        <aspectj.version>1.6.11</aspectj.version>
-        <slf4j.version>1.6.1</slf4j.version>
+        <spring.batch.version>2.1.7.RELEASE</spring.batch.version>	        
    		<neo4j.version>1.6.M02</neo4j.version>
         <spring.data.commons.version>1.2.0.RELEASE</spring.data.commons.version>
         <spring.data.neo4j.version>2.0.0.RELEASE</spring.data.neo4j.version>
@@ -25,7 +25,7 @@
         <freemarker.version>2.3.18</freemarker.version>
 		<biojava.version>3.0.2</biojava.version>
 		<biojava.legacy.version>1.8.1</biojava.legacy.version>
-		<extdirectspring.version>1.0.13</extdirectspring.version>
+		<extdirectspring.version>1.0.14</extdirectspring.version>
 		<wro4j.version>1.4.3</wro4j.version>
 		<weka.version>3.6.0</weka.version>
 		<antlr.version>3.0.1</antlr.version>
