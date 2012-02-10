@@ -35,11 +35,13 @@
 		<icu4j.version>4.8.1.1</icu4j.version>
     </properties>
     <repositories>
+    	<!--
     	<repository>
 			<id>biojava-maven-repo</id>
 			<name>BioJava repository</name>
 			<url>http://www.biojava.org/download/maven/</url>	
 		</repository>
+		-->
 		<repository>
 			<id>morphia-maven-repo</id>
 			<name>Morphia repository</name>
@@ -290,6 +292,7 @@
 			<version>${freemarker.version}</version>
 		</dependency>
 		
+		<!--  
 		<dependency>
 			<groupId>org.biojava</groupId>
 			<artifactId>core</artifactId>
@@ -325,6 +328,7 @@
 			<artifactId>biojava3-structure</artifactId>
 			<version>${biojava.version}</version>
 		</dependency>
+		-->
 		
 		<dependency>
 		  <groupId>ro.isdc.wro4j</groupId>
