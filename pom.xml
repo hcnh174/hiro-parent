@@ -33,6 +33,7 @@
 		<build.timestamp>${maven.build.timestamp}</build.timestamp>
 		<extjs.version>4.0.7</extjs.version>
 		<icu4j.version>4.8.1.1</icu4j.version>
+		<poi.version>3.8-beta5</poi.version>
     </properties>
     <repositories>
     	<!--
@@ -447,6 +448,17 @@
 			<groupId>com.ibm.icu</groupId>
 			<artifactId>icu4j</artifactId>
 			<version>${icu4j.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
 		</dependency>
     </dependencies>
     <build>
