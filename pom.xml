@@ -12,7 +12,7 @@
         <roo.version>1.2.0.RELEASE</roo.version>
         <aspectj.version>1.6.12.M2</aspectj.version> <!-- 1.6.11 -->
         <slf4j.version>1.6.2</slf4j.version><!--1.6.1  -->
-        <spring.version>3.1.0.RELEASE</spring.version>
+        <spring.version>3.1.1.RELEASE</spring.version>
         <spring-security.version>3.1.0.RELEASE</spring-security.version> <!-- 3.0.7.RELEASE -->
         <spring.batch.version>2.1.8.RELEASE</spring.batch.version>	        
    		<neo4j.version>1.6.M02</neo4j.version>
@@ -26,7 +26,7 @@
 		<biojava.version>3.0.2</biojava.version>
 		<biojava.legacy.version>1.8.1</biojava.legacy.version>
 		<extdirectspring.version>1.0.14</extdirectspring.version>
-		<wro4j.version>1.4.3</wro4j.version>
+		<wro4j.version>1.4.4</wro4j.version>
 		<weka.version>3.6.0</weka.version>
 		<antlr.version>3.0.1</antlr.version>
 		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>
