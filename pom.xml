@@ -34,6 +34,7 @@
 		<extjs.version>4.0.7</extjs.version>
 		<icu4j.version>4.8.1.1</icu4j.version>
 		<poi.version>3.8-beta5</poi.version>
+		<querydsl.version>2.3.2</querydsl.version>
     </properties>
     <repositories>
     	<!--
@@ -459,6 +460,19 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>${poi.version}</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.mysema.querydsl</groupId>
+		  <artifactId>querydsl-apt</artifactId>
+		  <version>${querydsl.version}</version>
+		  <scope>provided</scope>
+		</dependency>    
+		    
+		<dependency>
+		  <groupId>com.mysema.querydsl</groupId>
+		  <artifactId>querydsl-jpa</artifactId>
+		  <version>${querydsl.version}</version>
 		</dependency>
     </dependencies>
     <build>
