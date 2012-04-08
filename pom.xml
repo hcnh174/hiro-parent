@@ -26,7 +26,7 @@
 		<biojava.version>3.0.2</biojava.version>
 		<biojava.legacy.version>1.8.1</biojava.legacy.version>
 		<extdirectspring.version>1.0.16</extdirectspring.version>
-		<wro4j.version>1.4.4</wro4j.version>
+		<wro4j.version>1.4.5</wro4j.version>
 		<weka.version>3.6.0</weka.version>
 		<antlr.version>3.0.1</antlr.version>
 		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>
