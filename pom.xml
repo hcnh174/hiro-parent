@@ -9,7 +9,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.debug>true</maven.compiler.debug>		
-		<roo.version>1.2.0.RELEASE</roo.version>
+		<roo.version>1.2.1.RELEASE</roo.version>
 		<aspectj.version>1.6.12.M2</aspectj.version> <!-- 1.6.11 -->
 		<slf4j.version>1.6.2</slf4j.version><!--1.6.1  -->
 		<spring.version>3.1.1.RELEASE</spring.version>
@@ -21,11 +21,11 @@
 		<spring.data.mongodb.version>1.0.0.RELEASE</spring.data.mongodb.version>
 		<morphia.version>0.99</morphia.version>
 		<thymeleaf.version>1.1.4</thymeleaf.version>
-		<guava.version>11.0.2</guava.version>
+		<guava.version>12.0</guava.version>
 		<freemarker.version>2.3.19</freemarker.version>
 		<biojava.version>3.0.2</biojava.version>
 		<biojava.legacy.version>1.8.1</biojava.legacy.version>
-		<extdirectspring.version>1.0.16</extdirectspring.version>
+		<extdirectspring.version>1.0.17</extdirectspring.version>
 		<wro4j.version>1.4.5</wro4j.version>
 		<weka.version>3.6.0</weka.version>
 		<antlr.version>3.0.1</antlr.version>
@@ -33,7 +33,7 @@
 		<build.timestamp>${maven.build.timestamp}</build.timestamp>
 		<extjs.version>4.0.7</extjs.version>
 		<icu4j.version>4.8.1.1</icu4j.version>
-		<poi.version>3.8-beta5</poi.version>
+		<poi.version>3.8</poi.version>
 		<querydsl.version>2.3.2</querydsl.version>
 	</properties>
 	<repositories>
