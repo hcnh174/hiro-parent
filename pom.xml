@@ -9,14 +9,14 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.debug>true</maven.compiler.debug>		
-		<roo.version>1.2.1.RELEASE</roo.version>
+		<roo.version>1.2.2.RELEASE</roo.version>
 		<aspectj.version>1.6.12</aspectj.version> <!-- 1.6.12.M2 -->
 		<slf4j.version>1.6.2</slf4j.version><!--1.6.2  -->
 		<spring.version>3.1.1.RELEASE</spring.version>
 		<spring-security.version>3.1.0.RELEASE</spring-security.version> <!-- 3.0.7.RELEASE -->
 		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
 		<spring.data.jpa.version>1.1.0.RELEASE</spring.data.jpa.version>
-		<hibernate.version>4.1.1.Final</hibernate.version>
+		<hibernate.version>4.1.4.Final</hibernate.version>
 		<hibernate.search.version>4.1.1.Final</hibernate.search.version>
 		<postgresql.driver.version>9.1-901.jdbc4</postgresql.driver.version>
 		<querydsl.version>2.5.0</querydsl.version>
@@ -26,7 +26,7 @@
 		<spring.data.mongodb.version>1.0.0.RELEASE</spring.data.mongodb.version>
 		<neo4j.version>1.6.M02</neo4j.version>
 		<morphia.version>0.99</morphia.version>
-		<thymeleaf.version>1.1.4</thymeleaf.version>
+		<thymeleaf.version>2.0.8</thymeleaf.version>
 		 -->
 		<guava.version>12.0</guava.version>
 		<freemarker.version>2.3.19</freemarker.version>
@@ -34,8 +34,8 @@
 		<wro4j.version>1.4.6</wro4j.version>
 		<weka.version>3.6.0</weka.version>
 		<antlr.version>3.0.1</antlr.version>
-		<doc4j.version>2.7.1</doc4j.version>
-		<extjs.url>http://cdn.sencha.io/ext-4.1.0-gpl</extjs.url>
+		<doc4j.version>2.8.0</doc4j.version>
+		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1-rc1</extjs.url>
 		<icu4j.version>4.8.1.1</icu4j.version>
 		<poi.version>3.8</poi.version>
 		<!--		
@@ -481,20 +481,6 @@
 			<version>${poi.version}</version>
 		</dependency>
 		
-		<!-- 
-		<dependency>
-		  <groupId>com.mysema.querydsl</groupId>
-		  <artifactId>querydsl-apt</artifactId>
-		  <version>${querydsl.version}</version>
-		  <scope>provided</scope>
-		</dependency>	
-			
-		<dependency>
-		  <groupId>com.mysema.querydsl</groupId>
-		  <artifactId>querydsl-jpa</artifactId>
-		  <version>${querydsl.version}</version>
-		</dependency>
-		 -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
