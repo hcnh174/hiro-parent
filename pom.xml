@@ -20,27 +20,25 @@
 		<hibernate.search.version>4.1.1.Final</hibernate.search.version>
 		<postgresql.driver.version>9.1-901.jdbc4</postgresql.driver.version>
 		<querydsl.version>2.5.0</querydsl.version>
-		<!-- 
+		<guava.version>12.0</guava.version>
+		<freemarker.version>2.3.19</freemarker.version>
+		<extdirectspring.version>1.1.1</extdirectspring.version>
+		<wro4j.version>1.4.5</wro4j.version>
+		<weka.version>3.6.0</weka.version>
+		<antlr.version>3.0.1</antlr.version>
+		<doc4j.version>2.8.0</doc4j.version>
+		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1-rc2</extjs.url>
+		<icu4j.version>4.8.1.1</icu4j.version>
+		<poi.version>3.8</poi.version>
+		<!--		
+		<biojava.version>3.0.3</biojava.version>
+		<biojava.legacy.version>1.8.2</biojava.legacy.version>
 		<spring.data.commons.version>1.2.0.RELEASE</spring.data.commons.version>
 		<spring.data.neo4j.version>2.0.0.RELEASE</spring.data.neo4j.version>
 		<spring.data.mongodb.version>1.0.0.RELEASE</spring.data.mongodb.version>
 		<neo4j.version>1.6.M02</neo4j.version>
 		<morphia.version>0.99</morphia.version>
 		<thymeleaf.version>2.0.8</thymeleaf.version>
-		 -->
-		<guava.version>12.0</guava.version>
-		<freemarker.version>2.3.19</freemarker.version>
-		<extdirectspring.version>1.0.17</extdirectspring.version>
-		<wro4j.version>1.4.6</wro4j.version>
-		<weka.version>3.6.0</weka.version>
-		<antlr.version>3.0.1</antlr.version>
-		<doc4j.version>2.8.0</doc4j.version>
-		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1-rc1</extjs.url>
-		<icu4j.version>4.8.1.1</icu4j.version>
-		<poi.version>3.8</poi.version>
-		<!--		
-		<biojava.version>3.0.3</biojava.version>
-		<biojava.legacy.version>1.8.2</biojava.legacy.version>
 		-->
 		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>
 		<build.timestamp>${maven.build.timestamp}</build.timestamp>
@@ -63,8 +61,14 @@
 		<repository>
 			<id>spring-artefactory-release</id>
 			<name>Spring Artefactory Repository</name>
-			<url>http://repo.springsource.org/release/</url>
+			<url>http://repo.springsource.org/release</url>
 		</repository>
+		<repository>
+			<id>spring-artefactory-milestone</id>
+			<name>Spring Artefactory Repository</name>
+			<url>http://repo.springsource.org/milestone</url>
+		</repository>
+		<!-- 
 		<repository>
 			<id>spring-maven-release</id>
 			<name>Spring Maven Release Repository</name>
@@ -75,11 +79,12 @@
 			<name>Spring Maven Milestone Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
 		</repository>
+		-->
 		<repository>
 			<id>spring-roo-repository</id>
 			<name>Spring Roo Repository</name>
 			<url>http://spring-roo-repository.springsource.org/release</url>
-		</repository>		
+		</repository>
 		<repository>
 			<id>weka-maven-repo</id>
 			<name>Weka repository</name>
@@ -88,6 +93,17 @@
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
+			<id>spring-artefactory-release</id>
+			<name>Spring Artefactory Repository</name>
+			<url>http://repo.springsource.org/release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-artefactory-milestone</id>
+			<name>Spring Artefactory Repository</name>
+			<url>http://repo.springsource.org/milestone</url>
+		</pluginRepository>
+		<!-- 
+		<pluginRepository>
 			<id>spring-maven-release</id>
 			<name>Spring Maven Release Repository</name>
 			<url>http://maven.springframework.org/release</url>
@@ -97,11 +113,13 @@
 			<name>Spring Maven Milestone Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
 		</pluginRepository>
+		 -->
 		<pluginRepository>
 			<id>spring-roo-repository</id>
 			<name>Spring Roo Repository</name>
 			<url>http://spring-roo-repository.springsource.org/release</url>
 		</pluginRepository>
+		
 	</pluginRepositories>
 	<dependencies>
 		<!-- General dependencies for standard applications -->
@@ -159,6 +177,7 @@
 			<version>${roo.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		
 		<!-- Spring dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
