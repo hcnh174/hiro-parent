@@ -12,75 +12,76 @@
 		<maven>2.2.1</maven>
 	</prerequisites>
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.6</java.version>
-		<maven.compiler.debug>true</maven.compiler.debug>
-		<maven.enforcer.plugin>1.1</maven.enforcer.plugin> <!-- 1.0.1 -->
-		<maven.version.range>[2.2.1,3.1.0)</maven.version.range>
-		<roo.version>1.2.2.RELEASE</roo.version>
-		<aspectj.version>1.7.0.RC1</aspectj.version> <!-- 1.6.12 -->
-		<logback.version>1.0.6</logback.version>
-		<slf4j.version>1.6.6</slf4j.version>
-		<spring.version>3.1.2.RELEASE</spring.version>
-		<spring-security.version>3.1.1.RELEASE</spring-security.version>
-		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
-		<spring.data.jpa.version>1.1.0.RELEASE</spring.data.jpa.version>
-		<hibernate.version>4.1.4.Final</hibernate.version>
-		<hibernate.search.version>4.1.1.Final</hibernate.search.version>
-		<postgresql.driver.version>9.1-901-1.jdbc4</postgresql.driver.version> <!-- 9.1-901.jdbc4 -->
-		<querydsl.version>2.7.0</querydsl.version> <!-- 2.5.0 -->
-		<guava.version>12.0.1</guava.version>
-		<freemarker.version>2.3.19</freemarker.version>
-		<extdirectspring.version>1.1.3</extdirectspring.version>
-		<wro4j.version>1.4.5</wro4j.version>
-		<weka.version>3.6.0</weka.version>
-		<antlr.version>3.0.1</antlr.version>
-		<doc4j.version>2.8.0</doc4j.version>
-		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1</extjs.url>
-		<icu4j.version>49.1</icu4j.version> <!--4.8.1.1  -->
-		<poi.version>3.8</poi.version>
-		<junit.version>4.10</junit.version> <!-- 4.8.2 -->
-		<mockito.version>1.9.0</mockito.version>
-		<servlet.api.version>2.5</servlet.api.version>
-		<flexjson.version>2.1</flexjson.version>
-		<dom4j.version>1.6.1</dom4j.version>
-		<jaxen.version>1.1.1</jaxen.version>
-		<opencsv.version>2.3</opencsv.version> <!-- 2.0 -->
-		<commons.httpclient.version>3.1</commons.httpclient.version>
-		<commons.fileupload.version>1.2.2</commons.fileupload.version>
-		<jstl.api.version>1.2</jstl.api.version>
-		<jstl.impl.version>1.2</jstl.impl.version>
-		<el.api.version>1.0</el.api.version>
-		<joda.time.version>2.1</joda.time.version> <!-- 1.6 -->
-		<validation-api.version>1.0.0.GA</validation-api.version>
-		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
-		<jetty.webapp.version>8.1.4.v20120524</jetty.webapp.version> <!-- 7.4.4.v20110707 -->
-		<jsp.glassfish.version>2.1.v20100127</jsp.glassfish.version>
-		<jpa.api.version>1.0.1.Final</jpa.api.version>
-		<itext.version>2.1.7</itext.version>
-		<maven.eclipse.plugin>2.9</maven.eclipse.plugin><!-- 2.7 -->
-		<wtp.version>2.0</wtp.version>		
-		<maven.war.plugin>2.2</maven.war.plugin> <!-- 2.2 -->
-		<maven.deploy.plugin>2.7</maven.deploy.plugin><!-- 2.6 -->
-		<maven.assembly.plugin>2.3</maven.assembly.plugin><!-- 2.2.1 -->
-		<maven.compiler.plugin>2.5.1</maven.compiler.plugin><!-- 2.2.1, 2.4 -->
-		<maven.jetty.plugin>8.1.4.v20120524</maven.jetty.plugin><!-- 7.4.2.v20110526 -->
-		<maven.resources.plugin>2.5</maven.resources.plugin>
-		<maven.surefire.plugin>2.12</maven.surefire.plugin>
-		<maven.versions.plugin>1.3.1</maven.versions.plugin>
-		<maven.help.plugin>2.1.1</maven.help.plugin>
-		<maven.sonar.plugin>3.0</maven.sonar.plugin>
+		<antlr.version>3.4</antlr.version><!-- 3.0.1 -->	
+		<aspectj.version>1.7.0.RELEASE</aspectj.version> <!-- 1.6.12 -->		
+		<build.timestamp>${maven.build.timestamp}</build.timestamp> <!--  -->		
+		<commons.fileupload.version>1.2.2</commons.fileupload.version>		
+		<commons.httpclient.version>3.1</commons.httpclient.version>		
 		<commons.io.version>2.3</commons.io.version>
-		<maven.plugin.plugin>3.1</maven.plugin.plugin> <!-- 3.0 -->
-		<maven.sonar.plugin>3.1.1</maven.sonar.plugin> <!-- 3.0 -->
-		<maven.aspectj.plugin>1.4</maven.aspectj.plugin> <!-- 1.2 -->
-		<maven.exec.plugin>1.2.1</maven.exec.plugin> <!-- 1.1.1 -->
-		<maven.antrun.plugin>1.1</maven.antrun.plugin> <!--  -->
-		<maven.dependency.plugin>2.3</maven.dependency.plugin> <!-- 2.4 -->
+		<commons.lang3.version>3.1</commons.lang3.version>
+		<commons.lang2.version>2.6</commons.lang2.version>
+		<doc4j.version>2.8.0</doc4j.version>		
+		<dom4j.version>1.6.1</dom4j.version>		
+		<el.api.version>2.2.1-b04</el.api.version> <!-- 1.0 -->
+		<extdirectspring.version>1.1.3</extdirectspring.version>		
+		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1</extjs.url>		
+		<flexjson.version>2.1</flexjson.version>		
+		<freemarker.version>2.3.19</freemarker.version>		
+		<guava.version>12.0.1</guava.version>		
+		<hibernate.search.version>4.1.1.Final</hibernate.search.version>		
+		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>		
+		<hibernate.version>4.1.4.Final</hibernate.version>		
+		<icu4j.version>49.1</icu4j.version> <!--4.8.1.1  -->		
+		<itext.version>2.1.7</itext.version>		
+		<java.version>1.6</java.version>		
+		<jaxen.version>1.1.1</jaxen.version>		
 		<jetty.runner.version>7.5.4.v20111024</jetty.runner.version>
-		<maven.apt.plugin>1.0.2</maven.apt.plugin>
-		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>
-		<build.timestamp>${maven.build.timestamp}</build.timestamp> <!--  -->
+		<jetty.webapp.version>8.1.4.v20120524</jetty.webapp.version> <!-- 7.4.4.v20110707 -->		
+		<joda.time.version>2.1</joda.time.version> <!-- 1.6 -->		
+		<jpa.api.version>1.0.1.Final</jpa.api.version>		
+		<jsp.glassfish.version>9.1.1.B60.25.p2</jsp.glassfish.version> <!-- 2.1.v20100127 -->
+		<jstl.api.version>1.2</jstl.api.version>		
+		<jstl.impl.version>1.2</jstl.impl.version>		
+		<junit.version>4.10</junit.version> <!-- 4.8.2 -->		
+		<logback.version>1.0.6</logback.version>		
+		<maven.antrun.plugin>1.1</maven.antrun.plugin> <!--  -->		
+		<maven.apt.plugin>1.0.2</maven.apt.plugin>		
+		<maven.aspectj.plugin>1.4</maven.aspectj.plugin> <!-- 1.2 -->		
+		<maven.assembly.plugin>2.3</maven.assembly.plugin><!-- 2.2.1 -->		
+		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>		
+		<maven.compiler.debug>true</maven.compiler.debug>		
+		<maven.compiler.plugin>2.5.1</maven.compiler.plugin><!-- 2.2.1, 2.4 -->		
+		<maven.dependency.plugin>2.3</maven.dependency.plugin> <!-- 2.4 -->		
+		<maven.deploy.plugin>2.7</maven.deploy.plugin><!-- 2.6 -->		
+		<maven.eclipse.plugin>2.9</maven.eclipse.plugin><!-- 2.7 -->		
+		<maven.enforcer.plugin>1.1</maven.enforcer.plugin> <!-- 1.0.1 -->		
+		<maven.exec.plugin>1.2.1</maven.exec.plugin> <!-- 1.1.1 -->		
+		<maven.help.plugin>2.1.1</maven.help.plugin>		
+		<maven.jetty.plugin>8.1.4.v20120524</maven.jetty.plugin><!-- 7.4.2.v20110526 -->		
+		<maven.plugin.plugin>3.1</maven.plugin.plugin> <!-- 3.0 -->		
+		<maven.resources.plugin>2.5</maven.resources.plugin>
+		<maven.sonar.plugin>3.1.1</maven.sonar.plugin> <!-- 3.0 -->		
+		<maven.surefire.plugin>2.12</maven.surefire.plugin>		
+		<maven.version.range>[2.2.1,3.1.0)</maven.version.range>		
+		<maven.versions.plugin>1.3.1</maven.versions.plugin>		
+		<maven.war.plugin>2.2</maven.war.plugin> <!-- 2.2 -->		
+		<mockito.version>1.9.5-rc1</mockito.version>		
+		<opencsv.version>2.3</opencsv.version> <!-- 2.0 -->		
+		<poi.version>3.8</poi.version>		
+		<postgresql.driver.version>9.1-901-1.jdbc4</postgresql.driver.version> <!-- 9.1-901.jdbc4 -->		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
+		<querydsl.version>2.7.0</querydsl.version> <!-- 2.5.0 -->		
+		<roo.version>1.2.2.RELEASE</roo.version>		
+		<servlet.api.version>3.0-alpha-1</servlet.api.version>	<!-- 2.5 -->
+		<slf4j.version>1.6.6</slf4j.version>		
+		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>		
+		<spring.data.jpa.version>1.1.0.RELEASE</spring.data.jpa.version>		
+		<spring.version>3.1.2.RELEASE</spring.version>		
+		<spring-security.version>3.1.1.RELEASE</spring-security.version>		
+		<validation-api.version>1.0.0.GA</validation-api.version>		
+		<weka.version>3.6.0</weka.version>		
+		<wro4j.version>1.4.5</wro4j.version>		
+		<wtp.version>2.0</wtp.version>		
 	</properties>
 	<repositories>
 		<repository>
@@ -329,8 +330,20 @@
 					<artifactId>log4j</artifactId>
 				</exclusion>
 				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>commons-logging</groupId>
 					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-lang</groupId>
+					<artifactId>commons-lang</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-io</groupId>
+					<artifactId>commons-io</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -338,6 +351,28 @@
 			<groupId>ro.isdc.wro4j</groupId>
 			<artifactId>wro4j-extensions</artifactId>
 			<version>${wro4j.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-lang</groupId>
+					<artifactId>commons-lang</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-io</groupId>
+					<artifactId>commons-io</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		
 		<dependency>
@@ -432,6 +467,29 @@
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons.io.version}</version>
+			<!-- 
+			<exclusions>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+			 -->
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${commons.lang2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons.lang3.version}</version>
 		</dependency>
 		
 		<dependency>
