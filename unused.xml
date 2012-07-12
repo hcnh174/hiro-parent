@@ -1,0 +1,188 @@
+	<properties>
+		<biojava.version>3.0.3</biojava.version>
+		<biojava.legacy.version>1.8.2</biojava.legacy.version>
+		<spring.data.commons.version>1.2.0.RELEASE</spring.data.commons.version>
+		<spring.data.neo4j.version>2.0.0.RELEASE</spring.data.neo4j.version>
+		<spring.data.mongodb.version>1.0.0.RELEASE</spring.data.mongodb.version>
+		<neo4j.version>1.6.M02</neo4j.version>
+		<morphia.version>0.99</morphia.version>
+		<thymeleaf.version>2.0.8</thymeleaf.version>
+	</properties>
+	
+	
+	
+
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.25</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>${thymeleaf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring3</artifactId>
+			<version>${thymeleaf.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons-core</artifactId>
+			<version>${spring.data.commons.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-neo4j</artifactId>
+			<version>${spring.data.neo4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>${spring.data.mongodb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>${neo4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-cypher</artifactId>
+			<version>${neo4j.version}</version>
+		</dependency>
+
+		<dependency>
+		  <groupId>org.springframework.data</groupId>
+		  <artifactId>spring-data-mongodb-cross-store</artifactId>
+		  <version>${spring.data.mongodb.version}</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>core</artifactId>
+			<version>${biojava.legacy.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>sequencing</artifactId>
+			<version>${biojava.legacy.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>gui</artifactId>
+			<version>${biojava.legacy.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>biojava3-core</artifactId>
+			<version>${biojava.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>biojava3-alignment</artifactId>
+			<version>${biojava.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>biojava3-genome</artifactId>
+			<version>${biojava.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.biojava</groupId>
+			<artifactId>biojava3-structure</artifactId>
+			<version>${biojava.version}</version>
+		</dependency>
+		
+				<dependency>
+			<groupId>com.google.code.morphia</groupId>
+			<artifactId>morphia</artifactId>
+			<version>${morphia.version}</version>
+		</dependency>
+		
+		
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		
+		<!-- 		<dependency> -->
+<!-- 			<groupId>org.slf4j</groupId> -->
+<!-- 			<artifactId>jcl-over-slf4j</artifactId> -->
+<!-- 			<version>${slf4j.version}</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 		    <groupId>org.slf4j</groupId> -->
+<!-- 		    <artifactId>jul-to-slf4j</artifactId> -->
+<!-- 		</dependency> -->
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		
+		
+		
+		
+					<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-idea-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<dependenciesAsLibraries>true</dependenciesAsLibraries>
+				</configuration>
+			</plugin>
+			
+						<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
+			</plugin>
+			
+			
+						<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>antlr3-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+				<execution>
+					<goals>
+					  <goal>antlr</goal>
+					</goals>
+				</execution>
+				</executions>
+			</plugin>
+			
+			
+						<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>appassembler-maven-plugin</artifactId>
+				<version>1.1.1</version>
+				<executions>
+				  <execution>
+					<phase>package</phase>
+					<goals><goal>assemble</goal></goals>
+					<configuration>
+					  <assembleDirectory>target</assembleDirectory>
+					  <extraJvmArguments>-Xmx512m</extraJvmArguments>
+					  <programs>
+						<program>
+						  <mainClass>Main</mainClass>
+						  <name>webapp</name>
+						</program>
+					  </programs>
+					</configuration>
+				  </execution>
+				</executions>
+			</plugin>
