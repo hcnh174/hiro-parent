@@ -12,76 +12,76 @@
 		<maven>2.2.1</maven>
 	</prerequisites>
 	<properties>
-		<antlr.version>3.4</antlr.version><!-- 3.0.1 -->	
-		<aspectj.version>1.7.0.RELEASE</aspectj.version> <!-- 1.6.12 -->		
-		<build.timestamp>${maven.build.timestamp}</build.timestamp> <!--  -->		
-		<commons.fileupload.version>1.2.2</commons.fileupload.version>		
-		<commons.httpclient.version>3.1</commons.httpclient.version>		
-		<commons.io.version>2.3</commons.io.version>
+		<antlr.version>3.4</antlr.version><!-- 3.0.1 -->
+		<aspectj.version>1.7.0.RELEASE</aspectj.version> <!-- 1.6.12 -->
+		<build.timestamp>${maven.build.timestamp}</build.timestamp> <!--  -->
+		<commons.fileupload.version>1.2.2</commons.fileupload.version>
+		<commons.httpclient.version>3.1</commons.httpclient.version>
+		<commons.io.version>2.4</commons.io.version> <!-- 2.3 -->
 		<commons.lang3.version>3.1</commons.lang3.version>
 		<commons.lang2.version>2.6</commons.lang2.version>
-		<doc4j.version>2.8.0</doc4j.version>		
-		<dom4j.version>1.6.1</dom4j.version>		
+		<doc4j.version>2.8.0</doc4j.version>
+		<dom4j.version>1.6.1</dom4j.version>
 		<el.api.version>2.2.1-b04</el.api.version> <!-- 1.0 -->
-		<extdirectspring.version>1.1.3</extdirectspring.version>		
-		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1</extjs.url>		
-		<flexjson.version>2.1</flexjson.version>		
-		<freemarker.version>2.3.19</freemarker.version>		
-		<guava.version>12.0.1</guava.version>		
-		<hibernate.search.version>4.1.1.Final</hibernate.search.version>		
-		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>		
-		<hibernate.version>4.1.4.Final</hibernate.version>		
-		<icu4j.version>49.1</icu4j.version> <!--4.8.1.1  -->		
-		<itext.version>2.1.7</itext.version>		
-		<java.version>1.6</java.version>		
-		<jaxen.version>1.1.1</jaxen.version>		
+		<extdirectspring.version>1.1.3</extdirectspring.version>
+		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1</extjs.url>
+		<flexjson.version>2.1</flexjson.version>
+		<freemarker.version>2.3.19</freemarker.version>
+		<guava.version>12.0.1</guava.version>
+		<hibernate.search.version>4.1.1.Final</hibernate.search.version>
+		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
+		<hibernate.version>4.1.4.Final</hibernate.version>
+		<icu4j.version>49.1</icu4j.version> <!--4.8.1.1  -->
+		<itext.version>2.1.7</itext.version>
+		<java.version>1.6</java.version>
+		<jaxen.version>1.1.1</jaxen.version> <!-- KEEP 1.1.1 -->
 		<jetty.runner.version>7.5.4.v20111024</jetty.runner.version>
-		<jetty.webapp.version>8.1.4.v20120524</jetty.webapp.version> <!-- 7.4.4.v20110707 -->		
-		<joda.time.version>2.1</joda.time.version> <!-- 1.6 -->		
-		<jpa.api.version>1.0.1.Final</jpa.api.version>		
+		<jetty.webapp.version>8.1.5.v20120716</jetty.webapp.version> <!-- 8.1.4.v20120524, 7.4.4.v20110707 -->
+		<joda.time.version>2.1</joda.time.version> <!-- 1.6 -->
+		<jpa.api.version>1.0.1.Final</jpa.api.version>
 		<jsp.glassfish.version>9.1.1.B60.25.p2</jsp.glassfish.version> <!-- 2.1.v20100127 -->
-		<jstl.api.version>1.2</jstl.api.version>		
-		<jstl.impl.version>1.2</jstl.impl.version>		
-		<junit.version>4.10</junit.version> <!-- 4.8.2 -->		
-		<logback.version>1.0.6</logback.version>		
-		<maven.antrun.plugin>1.1</maven.antrun.plugin> <!--  -->		
-		<maven.apt.plugin>1.0.2</maven.apt.plugin>		
-		<maven.aspectj.plugin>1.4</maven.aspectj.plugin> <!-- 1.2 -->		
-		<maven.assembly.plugin>2.3</maven.assembly.plugin><!-- 2.2.1 -->		
-		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>		
-		<maven.compiler.debug>true</maven.compiler.debug>		
-		<maven.compiler.plugin>2.5.1</maven.compiler.plugin><!-- 2.2.1, 2.4 -->		
-		<maven.dependency.plugin>2.3</maven.dependency.plugin> <!-- 2.4 -->		
-		<maven.deploy.plugin>2.7</maven.deploy.plugin><!-- 2.6 -->		
-		<maven.eclipse.plugin>2.9</maven.eclipse.plugin><!-- 2.7 -->		
-		<maven.enforcer.plugin>1.1</maven.enforcer.plugin> <!-- 1.0.1 -->		
-		<maven.exec.plugin>1.2.1</maven.exec.plugin> <!-- 1.1.1 -->		
-		<maven.help.plugin>2.1.1</maven.help.plugin>		
-		<maven.jetty.plugin>8.1.4.v20120524</maven.jetty.plugin><!-- 7.4.2.v20110526 -->		
-		<maven.plugin.plugin>3.1</maven.plugin.plugin> <!-- 3.0 -->		
+		<jstl.api.version>1.2</jstl.api.version>
+		<jstl.impl.version>1.2</jstl.impl.version>
+		<junit.version>4.10</junit.version> <!-- 4.8.2 -->
+		<logback.version>1.0.6</logback.version>
+		<maven.antrun.plugin>1.1</maven.antrun.plugin> <!--  -->
+		<maven.apt.plugin>1.0.2</maven.apt.plugin>
+		<maven.aspectj.plugin>1.4</maven.aspectj.plugin> <!-- 1.2 -->
+		<maven.assembly.plugin>2.3</maven.assembly.plugin><!-- 2.2.1 -->
+		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>
+		<maven.compiler.debug>true</maven.compiler.debug>
+		<maven.compiler.plugin>2.5.1</maven.compiler.plugin><!-- 2.2.1, 2.4 -->
+		<maven.dependency.plugin>2.3</maven.dependency.plugin> <!-- 2.4 -->
+		<maven.deploy.plugin>2.7</maven.deploy.plugin><!-- 2.6 -->
+		<maven.eclipse.plugin>2.9</maven.eclipse.plugin><!-- 2.7 -->
+		<maven.enforcer.plugin>1.1</maven.enforcer.plugin> <!-- 1.0.1 -->
+		<maven.exec.plugin>1.2.1</maven.exec.plugin> <!-- 1.1.1 -->
+		<maven.help.plugin>2.1.1</maven.help.plugin>
+		<maven.jetty.plugin>8.1.4.v20120524</maven.jetty.plugin><!-- 7.4.2.v20110526 -->
+		<maven.plugin.plugin>3.1</maven.plugin.plugin> <!-- 3.0 -->
 		<maven.resources.plugin>2.5</maven.resources.plugin>
-		<maven.sonar.plugin>3.1.1</maven.sonar.plugin> <!-- 3.0 -->		
-		<maven.surefire.plugin>2.12</maven.surefire.plugin>		
-		<maven.version.range>[2.2.1,3.1.0)</maven.version.range>		
-		<maven.versions.plugin>1.3.1</maven.versions.plugin>		
-		<maven.war.plugin>2.2</maven.war.plugin> <!-- 2.2 -->		
-		<mockito.version>1.9.5-rc1</mockito.version>		
-		<opencsv.version>2.3</opencsv.version> <!-- 2.0 -->		
-		<poi.version>3.8</poi.version>		
-		<postgresql.driver.version>9.1-901-1.jdbc4</postgresql.driver.version> <!-- 9.1-901.jdbc4 -->		
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
-		<querydsl.version>2.7.0</querydsl.version> <!-- 2.5.0 -->		
-		<roo.version>1.2.2.RELEASE</roo.version>		
+		<maven.sonar.plugin>3.1.1</maven.sonar.plugin> <!-- 3.0 -->
+		<maven.surefire.plugin>2.12</maven.surefire.plugin>
+		<maven.version.range>[2.2.1,3.1.0)</maven.version.range>
+		<maven.versions.plugin>1.3.1</maven.versions.plugin>
+		<maven.war.plugin>2.2</maven.war.plugin> <!-- 2.2 -->
+		<mockito.version>1.9.5-rc1</mockito.version>
+		<opencsv.version>2.3</opencsv.version> <!-- 2.0 -->
+		<poi.version>3.8</poi.version>
+		<postgresql.driver.version>9.1-901-1.jdbc4</postgresql.driver.version> <!-- 9.1-901.jdbc4 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<querydsl.version>2.7.1</querydsl.version> <!-- 2.5.0 -->
+		<roo.version>1.2.2.RELEASE</roo.version>
 		<servlet.api.version>3.0-alpha-1</servlet.api.version>	<!-- 2.5 -->
-		<slf4j.version>1.6.6</slf4j.version>		
-		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>		
-		<spring.data.jpa.version>1.1.0.RELEASE</spring.data.jpa.version>		
-		<spring.version>3.1.2.RELEASE</spring.version>		
-		<spring-security.version>3.1.1.RELEASE</spring-security.version>		
-		<validation-api.version>1.0.0.GA</validation-api.version>		
-		<weka.version>3.6.0</weka.version>		
-		<wro4j.version>1.4.5</wro4j.version>		
-		<wtp.version>2.0</wtp.version>		
+		<slf4j.version>1.6.6</slf4j.version>
+		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
+		<spring.data.jpa.version>1.1.0.RELEASE</spring.data.jpa.version>
+		<spring.version>3.1.2.RELEASE</spring.version>
+		<spring-security.version>3.1.1.RELEASE</spring-security.version>
+		<validation-api.version>1.1.0.Alpha1</validation-api.version> <!-- 1.0.0.GA -->
+		<weka.version>3.6.0</weka.version>
+		<wro4j.version>1.4.5</wro4j.version>
+		<wtp.version>2.0</wtp.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -102,7 +102,7 @@
 		<repository>
 			<id>weka-maven-repo</id>
 			<name>Weka repository</name>
-			<url>http://ir.dcs.gla.ac.uk/~bpiwowar/maven</url>	
+			<url>http://ir.dcs.gla.ac.uk/~bpiwowar/maven</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
@@ -121,8 +121,7 @@
 			<name>Spring Roo Repository</name>
 			<url>http://spring-roo-repository.springsource.org/release</url>
 		</pluginRepository>
-		
-	</pluginRepositories>		
+	</pluginRepositories>
 	<dependencies>
 		<!--  logging -->
 		<dependency>
@@ -155,8 +154,6 @@
 			<artifactId>logback-access</artifactId>
 			<version>${logback.version}</version>
 		</dependency>
-
-	
 		<!-- General dependencies for standard applications -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -170,7 +167,6 @@
 			<version>${mockito.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
@@ -181,13 +177,11 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>net.sf.flexjson</groupId>
 			<artifactId>flexjson</artifactId>
 			<version>${flexjson.version}</version>
 		</dependency>
-		
 		<!-- ROO dependencies -->
 		<dependency>
 			<groupId>org.springframework.roo</groupId>
@@ -195,7 +189,6 @@
 			<version>${roo.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		
 		<!-- Spring dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -246,15 +239,11 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-
-		
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
 			<version>${commons.fileupload.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -283,7 +272,6 @@
 			<artifactId>joda-time</artifactId>
 			<version>${joda.time.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
@@ -304,9 +292,6 @@
 			<artifactId>jsp-2.1-glassfish</artifactId>
 			<version>${jsp.glassfish.version}</version>
 		</dependency>
-		
-
-		 
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
@@ -317,9 +302,6 @@
 			<artifactId>freemarker</artifactId>
 			<version>${freemarker.version}</version>
 		</dependency>
-		
-
-		
 		<dependency>
 			<groupId>ro.isdc.wro4j</groupId>
 			<artifactId>wro4j-core</artifactId>
@@ -374,14 +356,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
 		<dependency>
 			<groupId>ch.ralscha</groupId>
 			<artifactId>extdirectspring</artifactId>
 			<version>${extdirectspring.version}</version>
 		</dependency>
-
-
 		<!--	spring security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -415,7 +394,6 @@
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>${spring-security.version}</version>
 		</dependency>
-		
 		<!--	spring batch -->
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
@@ -427,19 +405,16 @@
 			<artifactId>spring-batch-infrastructure</artifactId>
 			<version>${spring.batch.version}</version>
 		</dependency>
-		
 		<dependency>
 			 <groupId>weka</groupId>
 			<artifactId>weka</artifactId>
-			<version>${weka.version}</version>	
+			<version>${weka.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>dom4j</groupId>
 			<artifactId>dom4j</artifactId>
 			<version>${dom4j.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>jaxen</groupId>
 			<artifactId>jaxen</artifactId>
@@ -451,7 +426,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	
 		<dependency>
 			<groupId>net.sf.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
@@ -491,19 +465,16 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>${commons.lang3.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>antlr-runtime</artifactId>
 			<version>${antlr.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>com.ibm.icu</groupId>
 			<artifactId>icu4j</artifactId>
 			<version>${icu4j.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -514,7 +485,6 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>${poi.version}</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
@@ -525,11 +495,11 @@
 			<artifactId>postgresql</artifactId>
 			<version>${postgresql.driver.version}</version>
 		</dependency>
-		<dependency>		
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
-		</dependency> 
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
@@ -545,7 +515,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
 			<artifactId>hibernate-jpa-2.0-api</artifactId>
@@ -581,8 +550,7 @@
 			<artifactId>querydsl-apt</artifactId>
 			<version>${querydsl.version}</version>
 			<scope>provided</scope>
-		</dependency>	
-			
+		</dependency>
 		<dependency>
 			<groupId>com.mysema.querydsl</groupId>
 			<artifactId>querydsl-jpa</artifactId>
@@ -611,14 +579,10 @@
 				</includes>
 			</resource>
 		</resources>
-		
 		<pluginManagement>
 			<plugins>
 			</plugins>
 		</pluginManagement>
-		
-
-		
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -672,7 +636,6 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -693,8 +656,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-	
-			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -735,13 +696,11 @@
 						<projectnature>org.eclipse.ajdt.ui.ajnature</projectnature>
 						<projectnature>com.springsource.sts.roo.core.nature</projectnature>
 						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-						
 						<projectnature>org.eclipse.jdt.core.javanature</projectnature>
 						<projectnature>org.eclipse.m2e.core.maven2Nature</projectnature>
 					</additionalProjectnatures>
 				</configuration>
 			</plugin>
-		
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
@@ -752,7 +711,6 @@
 					</webAppConfig>
 				</configuration>
 			</plugin>
-			
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
@@ -782,13 +740,11 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-plugin-plugin</artifactId>
 				<version>${maven.plugin.plugin}</version>
 			</plugin>
-
 			<!--	http://gordondickens.com/wordpress/2012/07/03/enterprise-spring-best-practices-part-1-project-config/ -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
