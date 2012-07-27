@@ -30,7 +30,7 @@
 		<guava.version>12.0.1</guava.version>
 		<hibernate.search.version>4.1.1.Final</hibernate.search.version>
 		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
-		<hibernate.version>4.1.4.Final</hibernate.version>
+		<hibernate.version>4.1.5.SP1</hibernate.version> <!-- 4.1.4.Final -->
 		<icu4j.version>49.1</icu4j.version> <!--4.8.1.1  -->
 		<itext.version>2.1.7</itext.version>
 		<java.version>1.6</java.version>
@@ -75,8 +75,9 @@
 		<servlet.api.version>3.0-alpha-1</servlet.api.version>	<!-- 2.5 -->
 		<slf4j.version>1.6.6</slf4j.version>
 		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
-		<spring.data.jpa.version>1.1.0.RELEASE</spring.data.jpa.version>
-		<spring.version>3.1.2.RELEASE</spring.version>
+		<spring.data.jpa.version>1.2.0.M1</spring.data.jpa.version> <!-- 1.1.0.RELEASE -->
+		<spring.shell.version>1.0.0.M1</spring.shell.version>
+		<spring.version>3.2.0.M1</spring.version> <!-- 3.1.2.RELEASE -->
 		<spring-security.version>3.1.1.RELEASE</spring-security.version>
 		<validation-api.version>1.1.0.Alpha1</validation-api.version> <!-- 1.0.0.GA -->
 		<weka.version>3.6.0</weka.version>
@@ -238,6 +239,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.shell</groupId>
+			<artifactId>spring-shell</artifactId>
+			<version>${spring.shell.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-fileupload</groupId>
