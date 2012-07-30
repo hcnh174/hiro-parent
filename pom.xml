@@ -73,6 +73,7 @@
 		<querydsl.version>2.7.1</querydsl.version> <!-- 2.5.0 -->
 		<roo.version>1.2.2.RELEASE</roo.version>
 		<servlet.api.version>3.0-alpha-1</servlet.api.version>	<!-- 2.5 -->
+		<skipTests>true</skipTests>
 		<slf4j.version>1.6.6</slf4j.version>
 		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
 		<spring.data.jpa.version>1.2.0.M1</spring.data.jpa.version> <!-- 1.1.0.RELEASE -->
@@ -655,6 +656,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.plugin}</version>
 				<configuration>
+					<skipTests>${skipTests}</skipTests>
 					<printSummary>false</printSummary>
 					<redirectTestOutputToFile>true</redirectTestOutputToFile>
 					<excludes>
