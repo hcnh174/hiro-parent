@@ -13,26 +13,30 @@
 	</prerequisites>
 	<properties>
 		<antlr.version>3.4</antlr.version><!-- 3.0.1 -->
+		<args4j.version>2.0.16</args4j.version>
 		<aspectj.version>1.7.0.RELEASE</aspectj.version> <!-- 1.6.12 -->
 		<build.timestamp>${maven.build.timestamp}</build.timestamp> <!--  -->
+		<commons.dbcp.version>1.4</commons.dbcp.version> <!-- 1.3 -->
 		<commons.fileupload.version>1.2.2</commons.fileupload.version>
 		<commons.httpclient.version>3.1</commons.httpclient.version>
 		<commons.io.version>2.4</commons.io.version> <!-- 2.3 -->
 		<commons.lang3.version>3.1</commons.lang3.version>
 		<commons.lang2.version>2.6</commons.lang2.version>
+		<commons.pool.version>1.6</commons.pool.version> <!-- 1.5.6 -->	
 		<doc4j.version>2.8.0</doc4j.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<el.api.version>2.2.1-b04</el.api.version> <!-- 1.0 -->
-		<extdirectspring.version>1.1.3</extdirectspring.version>
-		<extjs.url>http://home.hiroshima-u.ac.jp/nhayes/static/extjs-4.1.1</extjs.url>
+		<extdirectspring.version>1.2.0</extdirectspring.version>
+		<extjs.url>http://cdn.sencha.io/ext-4.1.1-gpl</extjs.url>
 		<flexjson.version>2.1</flexjson.version>
 		<freemarker.version>2.3.19</freemarker.version>
-		<guava.version>12.0.1</guava.version>
-		<hibernate.search.version>4.1.1.Final</hibernate.search.version>
-		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
-		<hibernate.version>4.1.5.SP1</hibernate.version> <!-- 4.1.4.Final -->
+		<guava.version>13.0</guava.version> <!-- 12.0.1 -->
+		<hibernate.search.version>4.2.0.Beta1</hibernate.search.version><!-- 4.1.1.Final -->
+		<hibernate.validator.version>5.0.0.Alpha1</hibernate.validator.version> <!-- 4.2.0.Final -->
+		<hibernate.version>4.1.5.SP1</hibernate.version> <!-- 4.1.6.FINAL -->
 		<icu4j.version>49.1</icu4j.version> <!--4.8.1.1  -->
 		<itext.version>2.1.7</itext.version>
+		<jackson.version>2.0.5</jackson.version>
 		<java.version>1.6</java.version>
 		<jaxen.version>1.1.1</jaxen.version> <!-- KEEP 1.1.1 -->
 		<jetty.runner.version>7.5.4.v20111024</jetty.runner.version>
@@ -44,14 +48,14 @@
 		<jstl.impl.version>1.2</jstl.impl.version>
 		<junit.version>4.10</junit.version> <!-- 4.8.2 -->
 		<logback.version>1.0.6</logback.version>
-		<maven.antrun.plugin>1.1</maven.antrun.plugin> <!--  -->
-		<maven.apt.plugin>1.0.2</maven.apt.plugin>
+		<maven.antrun.plugin>1.7</maven.antrun.plugin> <!-- 1.1 -->
+		<maven.apt.plugin>1.0.3</maven.apt.plugin> <!-- 1.0.2 -->
 		<maven.aspectj.plugin>1.4</maven.aspectj.plugin> <!-- 1.2 -->
 		<maven.assembly.plugin>2.3</maven.assembly.plugin><!-- 2.2.1 -->
 		<maven.build.timestamp.format>yyyy-MM-dd'T'hh:mm:ss.SSSZ</maven.build.timestamp.format>
 		<maven.compiler.debug>true</maven.compiler.debug>
 		<maven.compiler.plugin>2.5.1</maven.compiler.plugin><!-- 2.2.1, 2.4 -->
-		<maven.dependency.plugin>2.3</maven.dependency.plugin> <!-- 2.4 -->
+		<maven.dependency.plugin>2.5</maven.dependency.plugin> <!-- 2.3 -->
 		<maven.deploy.plugin>2.7</maven.deploy.plugin><!-- 2.6 -->
 		<maven.eclipse.plugin>2.9</maven.eclipse.plugin><!-- 2.7 -->
 		<maven.enforcer.plugin>1.1</maven.enforcer.plugin> <!-- 1.0.1 -->
@@ -70,19 +74,23 @@
 		<poi.version>3.8</poi.version>
 		<postgresql.driver.version>9.1-901-1.jdbc4</postgresql.driver.version> <!-- 9.1-901.jdbc4 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<querydsl.version>2.7.1</querydsl.version> <!-- 2.5.0 -->
+		<querydsl.version>2.7.2</querydsl.version> <!-- 2.7.1 -->
 		<roo.version>1.2.2.RELEASE</roo.version>
+		<rserve.version>0.6-1</rserve.version>
 		<servlet.api.version>3.0-alpha-1</servlet.api.version>	<!-- 2.5 -->
 		<skipTests>true</skipTests>
 		<slf4j.version>1.6.6</slf4j.version>
-		<spring.batch.version>2.1.8.RELEASE</spring.batch.version>
-		<spring.data.jpa.version>1.2.0.M1</spring.data.jpa.version> <!-- 1.1.0.RELEASE -->
+		<spring.batch.version>2.1.9.RELEASE</spring.batch.version><!-- 2.1.8.RELEASE -->
+		<spring.data.commons.version>1.4.0.RC1</spring.data.commons.version>
+		<spring.data.jpa.version>1.2.0.RC1</spring.data.jpa.version> <!-- 1.2.0.M1,1.1.0.RELEASE -->
 		<spring.shell.version>1.0.0.M1</spring.shell.version>
 		<spring.version>3.2.0.M1</spring.version> <!-- 3.1.2.RELEASE -->
-		<spring-security.version>3.1.1.RELEASE</spring-security.version>
+		<spring-security.version>3.1.2.RELEASE</spring-security.version>
+		<thymeleaf.version>2.0.12</thymeleaf.version>
+		<sysout.version>1.0.2</sysout.version>
 		<validation-api.version>1.1.0.Alpha1</validation-api.version> <!-- 1.0.0.GA -->
 		<weka.version>3.6.0</weka.version>
-		<wro4j.version>1.4.5</wro4j.version>
+		<wro4j.version>1.4.8.1</wro4j.version>
 		<wtp.version>2.0</wtp.version>
 	</properties>
 	<repositories>
@@ -310,6 +318,31 @@
 			<version>${freemarker.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>${thymeleaf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring3</artifactId>
+			<version>${thymeleaf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>		
+		<dependency>
 			<groupId>ro.isdc.wro4j</groupId>
 			<artifactId>wro4j-core</artifactId>
 			<version>${wro4j.version}</version>
@@ -473,10 +506,35 @@
 			<version>${commons.lang3.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>${commons.pool.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>${commons.dbcp.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>		
+		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>antlr-runtime</artifactId>
 			<version>${antlr.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>args4j</groupId>
+			<artifactId>args4j</artifactId>
+			<version>${args4j.version}</version>
+		</dependency>	
 		<dependency>
 			<groupId>com.ibm.icu</groupId>
 			<artifactId>icu4j</artifactId>
@@ -562,6 +620,21 @@
 			<groupId>com.mysema.querydsl</groupId>
 			<artifactId>querydsl-jpa</artifactId>
 			<version>${querydsl.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>uk.org.lidalia</groupId>
+			<artifactId>sysout-over-slf4j</artifactId>
+			<version>${sysout.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuiton.thirdparty</groupId>
+			<artifactId>Rserve</artifactId>
+			<version>${rserve.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuiton.thirdparty</groupId>
+			<artifactId>REngine</artifactId>
+			<version>${rserve.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -657,8 +730,9 @@
 				<version>${maven.surefire.plugin}</version>
 				<configuration>
 					<skipTests>${skipTests}</skipTests>
-					<printSummary>false</printSummary>
-					<redirectTestOutputToFile>true</redirectTestOutputToFile>
+					<printSummary>true</printSummary> <!-- false -->
+					<redirectTestOutputToFile>false</redirectTestOutputToFile><!-- true -->
+					<useFile>false</useFile><!-- true -->
 					<excludes>
 						<exclude>**/*_Roo_*</exclude>
 					</excludes>

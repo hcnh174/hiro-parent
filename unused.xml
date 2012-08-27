@@ -20,6 +20,8 @@
 
 
 
+
+
 		<dependency>
 			<groupId>org.thymeleaf</groupId>
 			<artifactId>thymeleaf</artifactId>
@@ -186,3 +188,16 @@
 				  </execution>
 				</executions>
 			</plugin>
+			
+			
+		<embeddedtc.version>0.0.9</embeddedtc.version>
+			
+			
+		<dependency>
+			<groupId>ch.ralscha</groupId>
+			<artifactId>embeddedtc</artifactId>
+			<version>${embeddedtc.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		
